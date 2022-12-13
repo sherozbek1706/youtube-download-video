@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  outline: none;
+}
+body{
+  background-color: #b3cde0;
+}
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+}
+.form{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form input{
+  width: 500px;
+  height: 50px;
+  font-weight: 500;
+  padding-left: 20px;
+  border: 1px solid #54b2a9;
+  border-radius: 4px;
+  margin: 5px;
+  transition: .3s ease-in-out;
+}
+.form input:focus{
+  border: 1px solid #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.form .download__video{
+  height: 50px;
+  width: 150px;
+  border-radius: 4px;
+  border: 1px solid #54b2a9;
+  background: #4d648d;
+  font-weight: 600;
+  color: white;
+  transition: .3s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+.form .download__video:hover{
+  cursor: pointer;
+  background-color: #344869 ;
+}
+.response{
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.response .item{
+  padding: 5px 15px;
+  width: 60%;
+  height: 40px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius:4px;
+  background-color: #fff;
+  transition: .4s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.response .item:hover{
+  transform: scale(1.01);
+  cursor: pointer;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.item p{
+  font-weight: 700;
+  font-size: 18px;
+  color: #4d648d;
+}
+.item a{
+  text-decoration: none;
+  color: #54b2a9;
+  font-weight: 500;
+  font-family: monospace;
+  transition: .4s ease-in-out;
+  font-size: 16px;
+}
+.response .item:hover a{
+  color: #344869;
+}
+.response ol{
+  margin: 10px auto;
+  width: 360px;
+}
+.response ol li{
+  font-weight: 600;
+  color: #344869;
+  font-size: 12px;
+}
+footer{
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p{
+  color: #b3cde0;
+  font-size: 12px;
+}
+footer p a{
+  color: #b3cde0;
+  font-size: 12px;
+}
+.remove__device{
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+.remove__device h4{
+  color: black;
+  text-align: center;
+  margin: 20px ;
+}
+@media(max-width:950px){
+  .container{
+    display: none;
+  }
+  .remove__device{
+    display: flex;
+  }
+}
